@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #6b6464;
+}
+
+#header{
+  border-bottom: 1px solid #868484;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.container{
+  width: 1000px;
+  padding: 10px;
+  background-color: #d4d4d4;
+  text-align: center;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.title-photo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.title-photo h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: fantasy;
+  letter-spacing: 8px;
+  font-size: 40px;
+}
+
+.title-photo img{
+  border-radius: 50%;
+}
+
+#header p{
+  width: 75%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+#header a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  color: #51807F;
+  transition: .3s;
+}
+
+#header a:hover{
+  color: black;
+  font-size: 20px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #868484;
+}
+
+h2{
+  text-decoration: underline;
+  color: #51807F;
+  margin: 0px;
+  padding: 10px;
+}
+
+.ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ul li{
+  list-style-type: none;
+}
+
+li a{
+  font-size: 20px;
+  color: black;
+  margin-right: 35px;
+}
+
+.footer{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    width: 700px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container .title-photo{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
